@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './nav.scss'
 })
 export class Nav {
-
+  protected isMobileMenuOpen = false;
+  onToggleMobileMenu() {
+    console.warn('toggle');
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
 }

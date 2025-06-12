@@ -37,13 +37,14 @@
           </ul>
         </div>
 
-        <!-- Mobile Menu & Hamburger Icon -->
+        
+<!-- Mobile Menu & Hamburger Icon -->
         <div class="navbar__mobile-menu">
-          <div class="navbar__mobile-menu-toggle">
+          <div class="navbar__mobile-menu-toggle" (click)="onToggleMobileMenu()">
             <i class="fas fa-bars fa-2x"></i>
           </div>
           <!-- Mobile Menu Items -->
-          <div class="navbar__mobile-menu-items">
+          <div class="navbar__mobile-menu-items" [class.active]="isMobileMenuOpen">
             <ul class="navbar__mobile-menu-list">
               <li class="navbar__mobile-menu-item">
                 <a href="index.html" class="navbar__mobile-menu-link">Home</a>
@@ -80,6 +81,6 @@
               </li>
             </ul>
           </div>
-        </div>
+          </div>
       </div>
     </nav>
